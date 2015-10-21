@@ -1,4 +1,4 @@
-# web knowledge
+# stuff notes
 
 # License
 
