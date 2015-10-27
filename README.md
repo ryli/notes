@@ -1,5 +1,7 @@
-# stuff notes
+# notes
 
-# License
+my notes
+
+## License
 
 The MIT License
