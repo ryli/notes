@@ -17,7 +17,7 @@ CSS 收集
     }
     ```
 
-3. 一些样式
+3. font样式
 
     ```
     font-family:"Century Gothic","Microsoft yahei";
