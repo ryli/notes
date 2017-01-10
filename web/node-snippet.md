@@ -1,4 +1,4 @@
-## yarn
+## yarn registry
 ```shell
 yarn config get registry
 # -> https://registry.yarnpkg.com
@@ -9,6 +9,13 @@ yarn config set registry 'https://registry.npm.taobao.org'
 ```
 
 ## nvm
+> config
+
+```shell
+export NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node
+export NVM_IOJS_ORG_MIRROR=http://npm.taobao.org/mirrors/iojs
+```
+
 > Manual upgrade
 
 1. change to the $NVM_DIR
