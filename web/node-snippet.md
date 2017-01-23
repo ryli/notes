@@ -31,3 +31,12 @@ export NVM_IOJS_ORG_MIRROR=http://npm.taobao.org/mirrors/iojs
 ) && . "$NVM_DIR/nvm.sh"
 ```
 [nvm](https://github.com/creationix/nvm#manual-upgrade)
+
+## other
+> chromedriver, phatomjs, selinjum
+
+```shell
+export PHANTOMJS_CDNURL=http://npm.taobao.org/mirrors/phantomjs
+export CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver
+export SELENIUM_CDNURL=http://npm.taobao.org/mirrorss/selenium
+```
