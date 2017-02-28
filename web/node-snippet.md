@@ -5,6 +5,7 @@ yarn config get registry
 
 yarn config set registry 'https://registry.npm.taobao.org'
 # -> success Set "registry" to "https://registry.npm.taobao.org".
+# origin:  https://registry.npmjs.org/
 
 ```
 
