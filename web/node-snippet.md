@@ -41,3 +41,16 @@ export PHANTOMJS_CDNURL=http://npm.taobao.org/mirrors/phantomjs
 export CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver
 export SELENIUM_CDNURL=http://npm.taobao.org/mirrorss/selenium
 ```
+
+## debug
+
+```
+node --inspect app.js
+
+node --trace-warnings app.js
+
+node --trace-deprecation app.js
+
+node --throw-deprecation app.js
+```
+
