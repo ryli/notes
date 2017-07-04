@@ -1,3 +1,4 @@
+### virtualenv
 ``` shell
 pip install --upgrade virtualenv
 
@@ -9,6 +10,8 @@ env/bin/pip install -r requirements.txt -i http://pypi.shequan.com/simple --trus
 
 ```
 
+
+### python3
 ```
 pip install virtualenvwrapper
 vim ~/.zshrc
