@@ -6,7 +6,7 @@ pip install --upgrade virtualenv
 virtualenv --python python3 env
 
 
-env/bin/pip install -r requirements.txt -i http://pypi.shequan.com/simple --trusted-host pypi.shequan.com
+env/bin/pip install -r requirements.txt -i http://pypi.**.com/simple --trusted-host pypi.**.com
 
 ```
 
