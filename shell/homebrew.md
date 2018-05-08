@@ -1,4 +1,11 @@
-# Homebrew 配置
+# Homebrew
+
+## 启动后台服务
+```
+// redis-server /usr/local/etc/redis.conf
+brew services start redis
+```
+
 
 ## 替换为中科大源
 ```shell
