@@ -31,3 +31,14 @@ git stash list
 # 删除所有存储的进度
 git stash clear 
 ```
+
+## 少用 pull 多用 fetch && merge
+```
+git fetch
+
+git checkout master && git merge origin/master
+
+# 只是想看看本地分支和远程分支的差异
+git diff master origin/master
+
+```
