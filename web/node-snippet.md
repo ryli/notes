@@ -6,7 +6,23 @@ yarn config get registry
 yarn config set registry 'https://registry.npm.taobao.org'
 # -> success Set "registry" to "https://registry.npm.taobao.org".
 # origin:  https://registry.npmjs.org/
-
+```
+### 选择性依赖项解决 
+在 package.json 文件里添加 resolutions 字段，用于覆盖版本定义：
+```js
+{
+  "name": "project",
+  "version": "1.0.0",
+  "dependencies": {
+    "left-pad": "1.0.0",
+    "c": "file:../c-1",
+    "d2": "file:../d2-1"
+  },
+  "resolutions": {
+    "d2/left-pad": "1.1.1",
+    "c/**/left-pad": "1.1.2"
+  }
+}
 ```
 
 ## nvm
