@@ -42,3 +42,24 @@ git checkout master && git merge origin/master
 git diff master origin/master
 
 ```
+
+## 撤销 （via: 爱得大大）
+```
+# 一、撤销某次不想要的提交
+# 删除最近一次提交
+git reset --hard HEAD~1 // 取消上一次 commit
+git push --force // 同步 
+
+# 通过commit_id来撤消，commit_id之后的提交都会丢失，请小心操作！
+git log // 查看commit_id
+git reset --hard <commit_id> // 将commit重置到commit_id之前的提交
+git push orign HEAD --force // 同步
+
+# 二、简单粗暴、直接
+git checkout --orphan latest_branch // 建新分支
+git add -A // 添加所有文件
+git commit -m "commit message" // 提交更改
+git branch -D master // 删除分支
+git branch -m master // 将当前分支重命名
+git push -f origin master // 强更新
+```
