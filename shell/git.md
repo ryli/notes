@@ -63,3 +63,22 @@ git branch -D master // 删除分支
 git branch -m master // 将当前分支重命名
 git push -f origin master // 强更新
 ```
+
+## [git flow](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow)
+```
+git flow init
+
+# 功能开发
+git flow feature start xxx
+git flow feature finish xxx
+
+git flow feature help
+
+# 管理 releases
+git flow release start 1.0.0
+git flow release finish 1.0.0
+
+# 处理 hotfix
+git flow hotfix start xxx
+git flow hotfix finish xxx
+```
