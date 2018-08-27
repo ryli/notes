@@ -82,3 +82,38 @@ git flow release finish 1.0.0
 git flow hotfix start xxx
 git flow hotfix finish xxx
 ```
+
+## config
+```
+[user]
+	name = ELEVEN
+	email = lov.2014@gmail.com
+[alias]
+	ci = commit -a -v
+	cm = commit -a -m
+	co = checkout
+	st = status
+	br = branch
+	throw = reset --hard HEAD
+	throwh = reset --hard HEAD^
+	l = log --oneline --decorate -12 --color
+	ll = log --oneline --decorate --color
+	lc = log --graph --color
+	rb = rebase
+	dci = dcommit
+	sbi = submodule init
+	sbu = submodule update
+	sbp = submodule foreach git pull
+	sbc = submodule foreach git co master
+[color]
+	ui = true
+[push]
+	default = current
+[core]
+	editor = vim
+	excludesfile = /Users/x/.gitignore
+	ignorecase = false
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
+```
