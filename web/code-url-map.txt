@@ -1,0 +1,2 @@
+input compositionupdate event
+https://codepan.net/gist/718c1ea2d465ec91aa8a9068eae3072d
