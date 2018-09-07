@@ -9,6 +9,9 @@
 2. kill Processes
 
     ```shell
+    # port
+    lsof -i:8000
+    
     # To kill all PHP Processes
     kill $(ps aux | grep '[p]hp' | awk '{print $2}')
 
