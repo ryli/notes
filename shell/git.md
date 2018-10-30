@@ -65,6 +65,9 @@ git push -f origin master // 强更新
 ```
 
 ## [git flow](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow)
+
+坑：feature finish 时合并到 develop 测试，新功能也是从 develop 切出来，新功能开发完成需要上线时，如果之前的功能未上线，就会有问题。
+
 ```
 git flow init
 
@@ -86,8 +89,8 @@ git flow hotfix finish xxx
 ## config
 ```
 [user]
-	name = ELEVEN
-	email = lov.2014@gmail.com
+	name = user
+	email = email
 [alias]
 	ci = commit -a -v
 	cm = commit -a -m
