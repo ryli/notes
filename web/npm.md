@@ -58,6 +58,13 @@ export CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver
 export SELENIUM_CDNURL=http://npm.taobao.org/mirrorss/selenium
 ```
 
+## audit fix
+Scan your project for vulnerabilities and automatically install any compatible updates to vulnerable dependencies
+[link](https://docs.npmjs.com/cli/audit)
+```
+npm audit fix
+```
+
 ## debug
 
 ```
