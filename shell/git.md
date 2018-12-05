@@ -64,6 +64,12 @@ git branch -m master // 将当前分支重命名
 git push -f origin master // 强更新
 ```
 
+## 查看某个文件的提交记录
+
+```
+git log -p -<:number> filename
+```
+
 ## [git flow](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow)
 
 坑：feature finish 时合并到 develop 测试，新功能也是从 develop 切出来，新功能开发完成需要上线时，如果之前的功能未上线，就会有问题。
