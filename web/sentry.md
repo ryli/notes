@@ -2,7 +2,7 @@
 
 本文介绍的是 nodejs，其他语言可以参考[官方文档](https://docs.sentry.io/clients/)。
 
-## new project
+## add new project
 
 1. 在后台创建项目
 2. 选择`框架语言`，可选 node.js, Express, Koa
