@@ -9,7 +9,7 @@
 3. 填写`项目名称`
 4. 选择`开发小组`
 5. 点击`创建项目`
-6. 在配置页面，记录生成的`Sentry DSN`, 类似 `https://f5b6564846344aae86ddd396819666f6@sentry.some-domain.cn/25`
+6. 在配置页面，记录生成的`Sentry DSN`, 例如： `https://f5b6564846344aae86ddd396819666f6@sentry.some-domain.cn/25`
 
 ## Installation
 
@@ -26,11 +26,11 @@ npm install @types/raven --dev
 在项目入口文件内加入以下代码：
 
 ```js
-const Raven = require("raven")
-const { isLocal } = require("./config")
+const Raven = require('raven')
+const { isLocal } = require('./config')
 
 // 上面生成的 Sentry DSN
-const DSN = "https://f5b6564846344aae86ddd396819666f6@sentry.some-domain.cn/25"
+const DSN = 'https://f5b6564846344aae86ddd396819666f6@sentry.some-domain.cn/25'
 // 取消命令行提醒
 Raven.disableConsoleAlerts()
 // 屏蔽本地开发时上传错误
@@ -58,14 +58,14 @@ app.on('error', function (err) {
   Raven.captureException(err)
 })
 
-process.on("uncaughtException", err => {
+process.on('uncaughtException', err => {
   console.error(err)
   // 上报错误
   Raven.captureException(err)
 })
 
-process.on("unhandledRejection", (reason, p) => {
-  console.log(`Unhandled Rejection at:`, p, "reason:", reason)
+process.on('unhandledRejection', (reason, p) => {
+  console.log(`Unhandled Rejection at:`, p, 'reason:', reason)
   // 上报错误
   Raven.captureException(reason)
 })
