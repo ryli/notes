@@ -25,3 +25,8 @@ otool -L qconf.node
 #   /usr/local/qconf/lib/libqconf.dylib (compatibility version 0.0.0, current version 0.0.0)
 #   ...
 ```
+
+或直接：
+```shell
+install_name_tool -change libqconf.dylib /usr/local/qconf/lib/libqconf.dylib ./node_modules/node-qconf/build/Release/qconf.node
+```
