@@ -67,7 +67,7 @@ npm audit fix
 
 ## debug
 
-```
+```shell
 node --inspect app.js
 
 node --trace-warnings app.js
@@ -77,3 +77,8 @@ node --trace-deprecation app.js
 node --throw-deprecation app.js
 ```
 
+## cache clean
+
+```shell
+npm cache clean --force
+```
