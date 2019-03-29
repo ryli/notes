@@ -92,6 +92,10 @@ git flow hotfix start xxx
 git flow hotfix finish xxx
 ```
 
+## plugin
+
+- [git-extras](https://github.com/tj/git-extras/blob/master/Commands.md)
+
 ## config
 ```
 [user]
