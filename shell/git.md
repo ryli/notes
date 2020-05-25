@@ -92,6 +92,19 @@ git flow hotfix start xxx
 git flow hotfix finish xxx
 ```
 
+## github 更新 fork 项目 (via: [HyG cs](https://www.zhihu.com/question/28676261/answer/44606041))
+```shell
+# 给fork配置远程库
+git remote -v
+git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+
+# 同步fork
+# 从上游仓库 fetch 分支和提交点，提交给本地 master，并会被存储在一个本地分支 upstream/master
+git fetch upstream
+# 把 upstream/master 分支合并到本地 master 上
+git merge upstream/master
+```
+
 ## plugin
 
 - [git-extras](https://github.com/tj/git-extras/blob/master/Commands.md)
