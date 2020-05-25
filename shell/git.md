@@ -43,7 +43,7 @@ git diff master origin/master
 
 ```
 
-## 撤销 （via: 爱得大大）
+## 撤销 （via: 爱得）
 ```
 # 一、撤销某次不想要的提交
 # 删除最近一次提交
