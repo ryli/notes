@@ -22,3 +22,12 @@
     # To kill all MySQL Processes
     kill $(ps aux | grep '[m]ysql' | awk '{print $2}')
     ```
+
+3. find
+
+  ```shell
+  # 删除当前目录下所有 node_modules 文件
+  find . -name "node_modules" -type d -prune -exec rm -rf '{}' +
+  ```
+ 
+ 
